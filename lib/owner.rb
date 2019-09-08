@@ -60,7 +60,7 @@ pets.collect {|pet|pet.owner=nil}
 end
 
 def list_pets
-  pets.name
+"I have #{dogs.count} dog(s), and #{cats.count} cat(s)."
 end
 
 end
