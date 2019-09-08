@@ -58,7 +58,6 @@ pets.collect do |pet| pet.mood="nervous"
 end
 pets.collect {|pet|pet.owner=nil}
 
-binding.pry
 
 end
 
