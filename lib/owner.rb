@@ -1,3 +1,4 @@
+require 'pry'
 class Owner
 attr_reader :name, :species, :pets
 
@@ -53,8 +54,10 @@ def pets
 end
 
 def sell_pets
-pets.each {|pet| pet.mood="nervous"}
-pets.clear {|pet| pet.owner}
+pets.collect do |pet| pet.mood="nervous"
+end
+binding.pry
+
 end
 
 end
