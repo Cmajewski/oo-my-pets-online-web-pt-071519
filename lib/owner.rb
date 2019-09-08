@@ -54,7 +54,7 @@ def pets
 end
 
 def sell_pets
-pets.collect do |pet| pet.mood="nervous", pet.owner=nil
+pets.collect do |pet| pet.mood="nervous",pet.owner="nil"
 end
 
 binding.pry
