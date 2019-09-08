@@ -62,3 +62,4 @@ end
 def list_pets
   puts pets.name
 end
+end
