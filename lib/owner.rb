@@ -56,7 +56,7 @@ end
 def sell_pets
 pets.collect do |pet| pet.mood="nervous"
 end
-pets.clear
+pets.collect {|pet|pet.owner=nil}
 
 end
 
